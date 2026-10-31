@@ -1,0 +1,4 @@
+{
+  "_about": "Workday tenant code -> real company name. Workday's job lists carry no company name, so the board sweep uses this (plus names learned from logged rows with a Workday link). Add a line when a code shows up raw.",
+  "names": {}
+}

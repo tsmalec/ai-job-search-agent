@@ -1,0 +1,70 @@
+# Local scratch: postings, drafts and built files
+work/
+scripts/local/qa_log.jsonl
+scripts/local/daily_public_report.md
+jd.txt
+jd.injection.txt
+*.injection.txt
+jd.json
+keywords.txt
+shop.txt
+ats.txt
+content*.json
+*.docx
+*.pdf
+__pycache__/
+basket.md
+review.md
+skim.md
+fetch.err
+data/sweep_snapshot.json
+
+# Board sweep live status (local only; the scheduled agent reads it on the machine running the sweep)
+data/sweep_status.json
+data/sweep_status.tmp
+data/sweep_checkpoint.json
+data/sweep_slugs.json
+data/li_status.json
+data/li_status.tmp
+data/sweep_jds/
+data/li_checkpoint.json
+data/li_checkpoint.tmp
+
+# ats_probe.py: company names already asked (local only)
+data/probe_tried.json
+
+# gmail_sweep.py: OAuth files never go in the repo (they live in ~/.jobsearch/)
+client_secret*.json
+gmail_token.json
+
+# Secrets: never commit keys or OAuth tokens
+.env
+.env.*
+*.env
+client_secret*.json
+*token*.json
+data/model.json
+
+# Your search rules (contact, home, pay floor). A PRIVATE copy may remove this line to sync it to a scheduler.
+config.json
+
+# Credentials in any common shape
+credentials*.json
+*.pickle
+*.pem
+*.key
+.jobsearch/
+
+# Sample-loop test fixtures (fictional data) must be committed even though their names match the scratch patterns above
+!tests/fixtures/**
+
+# Temp files from atomic writes (a killed process can leave one)
+.*.tmp
+# The fixtures exception above must never let credentials in
+tests/fixtures/**/credentials*.json
+tests/fixtures/**/client_secret*.json
+tests/fixtures/**/*token*.json
+tests/fixtures/**/*.pickle
+tests/fixtures/**/*.pem
+tests/fixtures/**/*.key
+tests/fixtures/**/.env

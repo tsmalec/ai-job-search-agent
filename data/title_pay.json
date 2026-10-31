@@ -1,0 +1,51 @@
+{
+  "_about": "Market BASE pay by title, for postings that list no pay. screen_leads.py matches a role title against each entry's `match` substrings (lowercase; longest match wins). market_base_hi under screen_min (data/pay_rules.json) = fail; otherwise HOLD with 'pay unconfirmed'. Research each title once (remote US, base only, not OTE) and add it. Recheck entries older than ~6 months. Seed entries are market research and will go stale.",
+  "titles": [
+    {
+      "title": "Senior Software Engineer, full stack (US)",
+      "match": [
+        "senior full-stack engineer",
+        "senior full stack engineer",
+        "senior software engineer"
+      ],
+      "market_base_lo": 135000,
+      "market_median": 160000,
+      "market_base_hi": 175000,
+      "checked": "2026-01-01",
+      "sources": [
+        "Example only: replace with your own research (e.g. salary guides, postings with stated ranges)"
+      ]
+    },
+    {
+      "title": "Software Engineer, full stack (US)",
+      "match": [
+        "full-stack engineer",
+        "full stack engineer",
+        "software engineer",
+        "web developer"
+      ],
+      "market_base_lo": 110000,
+      "market_median": 130000,
+      "market_base_hi": 150000,
+      "checked": "2026-01-01",
+      "sources": [
+        "Example only: replace with your own research"
+      ]
+    },
+    {
+      "title": "Staff Software Engineer (US)",
+      "match": [
+        "staff software engineer",
+        "staff engineer",
+        "principal engineer"
+      ],
+      "market_base_lo": 175000,
+      "market_median": 200000,
+      "market_base_hi": 230000,
+      "checked": "2026-01-01",
+      "sources": [
+        "Example only: replace with your own research"
+      ]
+    }
+  ]
+}

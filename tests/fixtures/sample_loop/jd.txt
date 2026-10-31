@@ -1,0 +1,39 @@
+TITLE: Senior Full-Stack Engineer
+COMPANY: Example Health Co
+LOCATION: Remote, United States
+PAY: $150,000 - $175,000
+REMOTE: Fully remote (US)
+URL: https://jobs.example.com/example-health/senior-full-stack-engineer-1042
+SOURCE: sample
+
+Senior Full-Stack Engineer (Remote, US)
+
+About the role
+Example Health Co builds scheduling and billing software used by clinics across the United States. We are hiring a Senior Full-Stack Engineer to join a product squad that owns the patient booking experience, from the React front end to the Node.js services and PostgreSQL data behind it. This is a fully remote position open to candidates anywhere in the United States.
+
+What you'll do
+- Build and ship features across the stack in TypeScript, React and Node.js
+- Design and evolve REST and GraphQL APIs that other teams depend on
+- Own data models and migrations in PostgreSQL, with an eye on performance
+- Improve our CI/CD pipeline, test automation and deployment on AWS
+- Lead technical design for your squad's work and mentor less experienced engineers
+- Partner with product and design to turn user problems into simple, fast interfaces
+
+Required qualifications
+- 5+ years of professional experience building web applications
+- Strong TypeScript and React experience
+- Experience building backend services with Node.js
+- Experience with PostgreSQL or another relational database
+- Experience deploying and running applications on AWS
+- Experience with automated testing and CI/CD
+
+Preferred qualifications
+- GraphQL
+- Terraform or other infrastructure as code
+- Go
+- Experience in healthcare or another regulated industry
+
+Compensation and benefits
+The base salary range for this role is $150,000 - $175,000 per year. We also offer medical, dental and vision coverage, a 401(k) match, and a home office stipend.
+
+Example Health Co is an equal opportunity employer.

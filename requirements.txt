@@ -1,0 +1,4 @@
+# Core: building .docx resumes
+python-docx==1.2.0
+# Optional: Indeed search in scripts/source_sweep.py (skip if you don't use it)
+python-jobspy==1.4.1

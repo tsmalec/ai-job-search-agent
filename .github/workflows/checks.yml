@@ -1,0 +1,67 @@
+name: checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12", "3.13"]  # oldest supported first: ipaddress.is_global varies by version
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Install
+        run: pip install python-docx==1.2.0 pytest==9.2.0
+      - name: Every script imports
+        run: |
+          cd scripts
+          for f in *.py; do python -c "import ${f%.py}" > /dev/null || { echo "FAIL $f"; exit 1; }; done
+      - name: Test suite
+        run: |
+          cp config.example.json config.json
+          python -m pytest -q tests
+      - name: Full loop on the Alex Example sample (scripts/jd_example.txt must PASS every step)
+        run: |
+          python scripts/inject_check.py scripts/jd_example.txt
+          python scripts/screen_leads.py scripts/jd_example.txt | tee /tmp/screen.txt
+          grep -q "PASS  Senior Full-Stack Engineer" /tmp/screen.txt
+          python scripts/knockouts.py scripts/jd_example.txt | tee /tmp/ko.txt
+          grep -q "0 ✗" /tmp/ko.txt
+          python scripts/shop.py B_Bullet_Catalog.md C_Gaps.md scripts/keywords_example.txt --basket /tmp/basket.md
+          python scripts/guard.py scripts/resume_example.json
+          python scripts/build_resume.py scripts/resume_example.json /tmp/test.docx
+          python scripts/truthpack.py scripts/resume_example.json --out /tmp/review.md
+          python scripts/skimpack.py scripts/resume_example.json --out /tmp/skim.md
+          python scripts/ats_check.py /tmp/test.docx scripts/jd_example.json --jd-text scripts/jd_example.txt | tee /tmp/ats.txt
+          grep -q "Required 7/7" /tmp/ats.txt
+          python scripts/guard_rows.py data/leads.json data/leads.json
+          python scripts/gmail_sweep.py sweep --fixture scripts/gmail_example.json
+      - name: No personal data in the template
+        run: |
+          python -c "import sys; sys.path.insert(0,'scripts'); import sync; w=sync.personal_data(); print('\n'.join(w) or 'clean'); sys.exit(1 if w else 0)"
+
+  history:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@6d4fd22b20465ccc0f7354476588e8df7c9ca0e0 # v7.1.0
+        with:
+          python-version: "3.13"
+      - name: Every commit on every ref, PR refs included
+        env:
+          PII_DENYLIST: ${{ secrets.PII_DENYLIST }}
+        run: |
+          git fetch -q origin '+refs/pull/*/head:refs/remotes/pr/*' '+refs/tags/*:refs/tags/*'
+          cp config.example.json config.json
+          python scripts/history_scan.py
