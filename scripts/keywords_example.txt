@@ -1,0 +1,13 @@
+Senior Full-Stack Engineer
+TypeScript
+React
+Node.js
+REST and GraphQL APIs
+PostgreSQL
+migrations
+CI/CD
+test automation
+AWS
+mentor
+Terraform
+Go

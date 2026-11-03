@@ -1,0 +1,56 @@
+{
+ "name": "ALEX EXAMPLE",
+ "contact": "Denver, CO 80202 | 555-010-0100 | alex@example.com | github.com/alex-example",
+ "education": "Bachelor of Science, Computer Science | Example State University, Fort Collins, CO | 2018",
+ "summary_id": "SUM-01",
+ "summary": "Full-stack software engineer with eight years building web applications in TypeScript, React, and Node.js. Rebuilt Globex Health's patient scheduling app and the API behind it, cutting page load from 4.1 to 1.6 seconds, and leads a four-engineer squad with a focus on testing, CI/CD, and AWS.",
+ "pin": [
+  "FE-01"
+ ],
+ "jobs": [
+  {
+   "title": "Senior Software Engineer",
+   "company": "Globex Health, Denver, CO",
+   "dates": "Apr 2022 - Present",
+   "bullets": [
+    "Rebuilt the patient scheduling web app in React and TypeScript, cutting largest contentful paint from 4.1 to 1.6 seconds for about 40,000 weekly users.",
+    "Designed the Node.js and TypeScript booking API (REST and GraphQL) that serves about 1.2 million requests a day, and cut p95 latency from 220 ms to 90 ms with Redis caching.",
+    "Moved deploys to GitHub Actions and Terraform on AWS ECS, cutting deploy time from 45 minutes to 12 and taking the team from weekly releases to about 20 deploys a week.",
+    "Led the migration of the billing service from MySQL to PostgreSQL with dual writes and no downtime, moving 18 million rows over six weeks.",
+    "Raised automated test coverage from 38% to 81% with Jest and Playwright, and production incidents fell from 14 to 5 a quarter.",
+    "Tech lead for a four-engineer squad since 2024, running sprint planning, design reviews, and code review, and mentoring three junior engineers."
+   ],
+   "bullet_ids": [
+    "FE-01",
+    "BE-01",
+    "OPS-01",
+    "BE-02",
+    "OPS-02",
+    "LEAD-01"
+   ]
+  },
+  {
+   "title": "Software Engineer",
+   "company": "Initech, Boulder, CO",
+   "dates": "Jul 2019 - Mar 2022",
+   "bullets": [
+    "Built Python (FastAPI) services that replaced a nightly invoice batch job, so customers saw new invoices within minutes instead of the next day."
+   ],
+   "bullet_ids": [
+    "BE-03"
+   ]
+  },
+  {
+   "title": "Web Developer",
+   "company": "Vandelay Industries, Denver, CO",
+   "dates": "Jun 2018 - Jun 2019",
+   "bullets": [
+    "Shipped more than 30 storefront features in JavaScript and PHP for an e-commerce site with about 2 million monthly visitors."
+   ],
+   "bullet_ids": [
+    "WEB-01"
+   ]
+  }
+ ],
+ "skills": "TypeScript; React; Node.js; GraphQL; PostgreSQL; Redis; AWS (ECS, Lambda, S3); Terraform; GitHub Actions; Jest; Playwright; Python"
+}

@@ -1,0 +1,12 @@
+{
+  "_about": "Pay thresholds: the ONE place these numbers live. Scripts read them through common.pay_rules(). Sample values: replace with your own. Base pay only (OTE never counts). Change a number here and nowhere else.",
+  "screen_min": 130000,
+  "_screen_min": "Hard screen (sweeps, screen_leads.py): a stated base top, or a no-pay title's market base top, under this = fail.",
+  "vet_floor": 150000,
+  "_vet_floor": "Vetting floor (verdict, triage, salary_gap.py): a base top at or above this clears. Between screen_min and vet_floor = flag as the user's call, never an auto-skip.",
+  "ask_no_range": [
+    130000,
+    150000
+  ],
+  "_ask_no_range": "Salary-question answer when the posting lists no pay: 'My desired base salary is in the range of $LO to $HI, and I am open to discussing total compensation.'"
+}
