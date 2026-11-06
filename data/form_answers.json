@@ -1,0 +1,55 @@
+{
+  "_template_sample": "fictional Alex Example data; delete this key when you put your own answers here",
+  "_note": "SAMPLE. Standard answers for application forms. Facts from B only. null = the candidate fills in once; never guess these.",
+  "name": {
+    "legal_first": "Alex",
+    "legal_middle": null,
+    "last": "Example",
+    "preferred_first": "Alex",
+    "resume_header": "Alex Example"
+  },
+  "contact": {
+    "email": "alex@example.com",
+    "phone": "555-010-0100",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "80202",
+    "linkedin": "https://www.linkedin.com/in/alex-example",
+    "github": "https://github.com/alex-example"
+  },
+  "education": {
+    "degree": "Bachelor of Science, Computer Science",
+    "school": "Example State University",
+    "location": "Fort Collins, CO",
+    "year": 2018
+  },
+  "certifications": [],
+  "work_preferences": {
+    "relocation": "No",
+    "arrangement": "Remote, or on-site/hybrid within 50 miles of Denver, CO",
+    "travel_ok": null
+  },
+  "current_or_last_employer": {
+    "title": "Senior Software Engineer",
+    "company": "Globex Health",
+    "dates": "April 2022 - Present",
+    "reason_for_leaving": null
+  },
+  "salary": {
+    "rule": "Repeat the posted range back: 'My desired base salary is in line with the posted range of $X to $Y, and I am open to discussing total compensation.'"
+  },
+  "eligibility": {
+    "authorized_to_work_us": null,
+    "needs_sponsorship": null
+  },
+  "voluntary_self_id": {
+    "_note": "The candidate answers these on each form.",
+    "gender": null,
+    "veteran": null,
+    "disability": null,
+    "race_ethnicity": null
+  },
+  "about_me": {
+    "text": null
+  }
+}

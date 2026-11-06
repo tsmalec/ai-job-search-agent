@@ -1,0 +1,58 @@
+{
+ "title": "senior full-stack engineer",
+ "title_core": [
+  "full-stack engineer",
+  "senior software engineer",
+  "software engineer"
+ ],
+ "required": {
+  "typescript": [
+   "typescript"
+  ],
+  "react": [
+   "react"
+  ],
+  "node.js": [
+   "node.js",
+   "node"
+  ],
+  "postgresql": [
+   "postgresql"
+  ],
+  "aws": [
+   "aws"
+  ],
+  "ci/cd": [
+   "ci/cd",
+   "github actions"
+  ],
+  "automated testing": [
+   "test",
+   "jest",
+   "playwright"
+  ]
+ },
+ "preferred": {
+  "graphql": [
+   "graphql"
+  ],
+  "terraform": [
+   "terraform"
+  ],
+  "mentoring": [
+   "mentor"
+  ]
+ },
+ "keywords": {
+  "api design": [
+   "api"
+  ],
+  "performance": [
+   "latency",
+   "page load"
+  ],
+  "data migration": [
+   "migration"
+  ]
+ }
+}

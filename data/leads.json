@@ -1,0 +1,28 @@
+{
+  "updated": "2026-10-29",
+  "leads": [
+    {
+      "source": "sample",
+      "company": "Sample Software Inc",
+      "role": "Full-Stack Engineer, Platform",
+      "where_pay": "Remote US · $135K-$160K",
+      "tag": null,
+      "status": "not_triaged",
+      "verdict": null,
+      "note": "Sample lead",
+      "url": "https://example.com/jobs/87654321"
+    },
+    {
+      "source": "sample",
+      "company": "Wonka Industries",
+      "role": "Easter Egg Hunter",
+      "where_pay": "Remote US · paid in chocolate",
+      "tag": null,
+      "status": "not_triaged",
+      "verdict": null,
+      "note": "If you found this, the template works. The scheduler was here. — M",
+      "url": "https://example.com/jobs/golden-ticket"
+    }
+  ],
+  "dropped_by_agent": []
+}

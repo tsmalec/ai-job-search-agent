@@ -1,0 +1,26 @@
+{
+ "_about": "Offline test for gmail_sweep.py (--fixture). Made-up emails against the sample applications.json row. Run: python scripts/gmail_sweep.py sweep --fixture scripts/gmail_example.json",
+ "messages": [
+  {
+   "id": "t1",
+   "from": "Example Fintech Co Careers <noreply@example.com>",
+   "subject": "We received your application",
+   "date": "2026-10-21T09:12:00-06:00",
+   "body": "Hi Alex, thank you for applying to the Senior Full-Stack Engineer role. We have received your application and will review it."
+  },
+  {
+   "id": "t2",
+   "from": "Example Fintech Co Recruiting <recruiting@example.com>",
+   "subject": "Next steps: Senior Full-Stack Engineer",
+   "date": "2026-10-28T14:02:00-06:00",
+   "body": "Hi Alex, we'd like to schedule a 30-minute recruiter screen for the Senior Full-Stack Engineer role. Please pick a time."
+  },
+  {
+   "id": "t3",
+   "from": "Newsletter <news@example.org>",
+   "subject": "This week in software engineering",
+   "date": "2026-10-28T08:00:00-06:00",
+   "body": "Industry news roundup."
+  }
+ ]
+}
