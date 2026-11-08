@@ -1,0 +1,20 @@
+{
+  "updated": "2026-10-29",
+  "applications": [
+    {
+      "added": "2026-10-20",
+      "company": "Example Fintech Co",
+      "role": "Senior Full-Stack Engineer (Remote US · $150K-$170K)",
+      "verdict": "green",
+      "ats": "88",
+      "resume": "records/05_Approved_Resume_Example_Fintech_Senior_Full_Stack_Engineer.md",
+      "status": "applied",
+      "status_date": "2026-10-21",
+      "confirmed": true,
+      "referral": null,
+      "note": "Sample row. One applied, one recruiter screen: the loop paid off. Keep going. — T",
+      "next_step": "Wait for screen",
+      "url": "https://example.com/jobs/12345678"
+    }
+  ]
+}

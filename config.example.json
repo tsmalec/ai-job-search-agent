@@ -1,0 +1,132 @@
+{
+  "_note": "Your search rules. Copy to config.json (git-ignored) and edit; scripts read config.json first, this example otherwise. START_HERE.md walks an agent through filling it in with you.",
+  "candidate": {
+    "name": "Alex Example",
+    "contact_line": "Denver, CO 80202 | 555-010-0100 | alex@example.com | github.com/alex-example",
+    "education_line": "Bachelor of Science, Computer Science | Example State University, Fort Collins, CO | 2018",
+    "degree_summary": "Bachelor's, Computer Science, 2018"
+  },
+  "search": {
+    "home_label": "Denver, CO",
+    "timezone": "America/Denver",
+    "commute_radius_mi": 50,
+    "exclude_companies": [],
+    "home_states": {
+      "co": "colorado"
+    },
+    "near_cities": [
+      "denver",
+      "aurora",
+      "lakewood",
+      "littleton",
+      "englewood",
+      "centennial",
+      "arvada",
+      "westminster",
+      "thornton",
+      "boulder",
+      "broomfield",
+      "golden",
+      "parker",
+      "castle rock",
+      "highlands ranch",
+      "louisville",
+      "longmont",
+      "brighton",
+      "commerce city",
+      "greenwood village"
+    ],
+    "linkedin_location": "Denver, Colorado, United States",
+    "indeed_location": "Denver, CO",
+    "usajobs_location": "Denver, Colorado",
+    "title_patterns": [
+      "full stack",
+      "full-stack",
+      "software engineer",
+      "frontend engineer",
+      "front-end engineer",
+      "backend engineer",
+      "back-end engineer",
+      "web developer",
+      "react developer",
+      "node developer",
+      "product engineer",
+      "application engineer"
+    ],
+    "drop_title": "\\bintern\\b|internship|\\bjunior\\b|\\bjr\\b|entry level|apprentice|account executive|sales representative|recruit|nurse|physician|attorney|teacher|driver|warehouse|store manager|restaurant|\\bsdr\\b|\\bbdr\\b|embedded|firmware|mechanical|electrical|civil|hardware",
+    "lane_words": [
+      "engineer",
+      "developer",
+      "full stack",
+      "full-stack",
+      "frontend",
+      "backend",
+      "\\bweb\\b"
+    ],
+    "linkedin_terms": [
+      "full stack engineer",
+      "full-stack engineer",
+      "software engineer",
+      "senior software engineer",
+      "frontend engineer",
+      "backend engineer",
+      "web developer",
+      "react developer",
+      "node.js developer",
+      "typescript"
+    ],
+    "linkedin_or_groups": [
+      "\"full stack engineer\" OR \"full-stack engineer\" OR \"software engineer\"",
+      "\"react developer\" OR \"frontend engineer\" OR \"typescript\"",
+      "\"backend engineer\" OR \"node.js\" OR \"web developer\""
+    ],
+    "indeed_queries": [
+      "full stack engineer",
+      "full-stack engineer",
+      "software engineer",
+      "senior software engineer",
+      "frontend engineer",
+      "backend engineer",
+      "web developer",
+      "react developer",
+      "node.js developer",
+      "typescript"
+    ],
+    "extra_workday_boards": []
+  },
+  "guard": {
+    "banned_phrases": [
+      [
+        "\\b(?:engineering manager|people manager)\\b",
+        "a title the candidate didn't hold; use scope language (tech lead)"
+      ],
+      [
+        "\\bmanaged (?:a |the )?(?:team|engineers)\\b",
+        "no direct reports: say 'tech lead' or 'mentored'"
+      ],
+      [
+        "\\bexample customer inc\\b",
+        "never name customers on paper"
+      ]
+    ]
+  },
+  "resume": {
+    "role_codes": {
+      "senior software engineer": "SSE",
+      "software engineer": "SE",
+      "web developer": "WD"
+    },
+    "title_aliases": {
+      "senior full-stack engineer": "senior software engineer"
+    },
+    "leadership_bullet_ids": [
+      "LEAD-01"
+    ],
+    "team_lead_bullet_id": "LEAD-01",
+    "skills_line_ok_gaps": [],
+    "flag_tools": {
+      "kubernetes": "Kubernetes named: a ramp-up tool gap, flag it (never a skip by itself)"
+    },
+    "skip_strip_employers": []
+  }
+}

@@ -1,0 +1,14 @@
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 0  # no update PRs on the template repo (each PR ref is kept forever); raise it in your own copy
+    labels: ["dependencies"]
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 0  # no update PRs on the template repo (each PR ref is kept forever); raise it in your own copy
+    labels: ["dependencies"]
